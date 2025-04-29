@@ -150,7 +150,7 @@ STATICFILES_DIRS = [
 LOGIN_URL = '/adminlogin/'  # Ensure this matches your login URL pattern
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Default
-ALLOWED_HOSTS = ['college-django-project-5.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['college-django-project-6.onrender.com', 'localhost', '127.0.0.1']
 ALLOWED_HOSTS = ['*.onrender.com', 'localhost', '127.0.0.1']
 
 
