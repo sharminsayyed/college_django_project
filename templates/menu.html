@@ -1,0 +1,300 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="{% static 'assets/img/favicon.jpg' %}" rel="icon">
+  
+  
+</head>
+
+<body>
+
+   
+
+    {% include 'header.html' %}
+      
+
+    <main class="main">
+        <!-- Menu Section -->
+    <section id="menu" class="menu section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <br><br>
+          <h2>Menu</h2>
+          <div><span>Check Our </span> <span class="description-title">Tasty Menu</span></div>
+        </div><!-- End Section Title -->
+  
+        <div class="container isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul class="menu-filters isotope-filters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-starters">Starters</li>
+                <li data-filter=".filter-salads">Salads</li>
+                <li data-filter=".filter-specialty">Specialty</li>
+                <li data-filter=".filter-dessert">Desserts</li>
+
+              </ul>
+            </div>
+          </div><!-- Menu Filters -->
+  
+          <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
+  
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <img src="{% static 'assets/img/menu/starter1.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Burrata with Heirloom Tomatoes</a><span>Rs 508.09</span>
+              </div>
+              <div class="menu-ingredients">
+                Creamy burrata cheese paired with juicy heirloom tomatoes, drizzled with balsamic reduction, and garnished with fresh basil and olive oil.
+                A balance of creaminess, acidity, and freshness makes it a perfect light starter.
+
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <img src="{% static 'assets/img/menu/starter2.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Lobster Bisque</a><span>Rs 550.79</span>
+              </div>
+              <div class="menu-ingredients">
+                A rich, velvety soup made with lobster stock, cream, and a touch of brandy, garnished with a dollop of crème fraîche and chives.
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <img src="{% static 'assets/img/menu/starter3.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Tuna Tartare</a><span>Rs 678.88</span>
+              </div>
+              <div class="menu-ingredients">
+                Fresh, sushi-grade tuna diced and mixed with avocado, sesame oil, soy sauce, and lime juice, served with wonton crisps or cucumber slices.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <img src="{% static 'assets/img/menu/starter4.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Shrimp Ceviche</a><span>Rs 550.60</span>
+              </div>
+              <div class="menu-ingredients">
+                Shrimp marinated in citrus juices, mixed with diced mango, cucumber, red onion, and cilantro, served in individual portions with tortilla chips.
+              </div>
+            </div> 
+  
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <img src="{% static 'assets/img/menu/starter5.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Truffle Mushroom Arancini</a><span>Rs 990.10</span>
+              </div>
+              <div class="menu-ingredients">
+                Crispy risotto balls infused with truffle oil, filled with wild mushrooms and mozzarella, served with a delicate tomato coulis
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <img src="{% static 'assets/img/menu/starter6.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Scallops with Cauliflower Purée</a><span>Rs 778.90</span>
+              </div>
+              <div class="menu-ingredients">
+                Perfectly seared scallops served atop a silky cauliflower purée, garnished with crispy pancetta and micro herbs.
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <img src="{% static 'assets/img/menu/salad1.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Thai Mango Salad </a><span>Rs 849.67</span>
+              </div>
+              <div class="menu-ingredients">
+                Fresh julienned mango, carrots, and cucumber tossed with red chili, crushed peanuts, and cilantro
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <img src="{% static 'assets/img/menu/salad2.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Quinoa and Roasted Vegetable Salad</a><span>Rs 422.70</span>
+              </div>
+              <div class="menu-ingredients">
+                Tri-color quinoa tossed with roasted bell peppers, zucchini, cherry tomatoes, and baby spinach.
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <img src="{% static 'assets/img/menu/salad3.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Watermelon and Feta Salad</a><span>Rs 849.67</span>
+              </div>
+              <div class="menu-ingredients">
+                Juicy watermelon cubes, crumbled feta cheese, and fresh mint leaves, garnished with pickled red onions and pistachios.
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <img src="{% static 'assets/img/menu/salad4.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Spinach Salad</a><span>Rs 849.67</span>
+              </div>
+              <div class="menu-ingredients">
+                Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <img src="{% static 'assets/img/menu/salad5.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Citrus Avocado Salad</a><span>Rs 500.45</span>
+              </div>
+              <div class="menu-ingredients">
+                A refreshing mix of orange and grapefruit segments, avocado slices, and fennel shavings on a bed of baby greens.
+              </div>
+            </div><!-- Menu Item -->
+            
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <img src="{% static 'assets/img/menu/salad6.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Roasted Beet and Orange Salad</a><span>Rs 789.56</span>
+              </div>
+              <div class="menu-ingredients">
+                Roasted beets, segmented oranges, and red onion tossed with mixed greens and a sprinkle of goat cheese.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+              <img src="{% static 'assets/img/menu/special1.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Lobster Roll</a><span>Rs 2234.67</span>
+              </div>
+              <div class="menu-ingredients">
+                Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+              <img src="{% static 'assets/img/menu/special2.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Saffron and Rose Petal Infused Tandoori Lamb Chops</a><span>Rs 2345.90</span>
+              </div>
+              <div class="menu-ingredients">
+                Tender lamb chops marinated in a mixture of saffron, yogurt, and rose petals, then grilled to perfection in a tandoor.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+              <img src="{% static 'assets/img/menu/special3.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Gold Leaf-Crusted Wagyu Beef Tenderloin</a><span>Rs 6712.30</span>
+              </div>
+              <div class="menu-ingredients">
+                An exquisite piece of Japanese A5 Wagyu beef, seared to perfection, and wrapped in edible gold leaf.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+              <img src="{% static 'assets/img/menu/special4.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Caviar and Lobster Risotto</a><span>Rs 4500.12</span>
+              </div>
+              <div class="menu-ingredients">
+                A creamy risotto made with premium Arborio rice, rich lobster stock, and butter, topped with delicate Beluga caviar and chunks of fresh lobster tail.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+              <img src="{% static 'assets/img/menu/special5.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Lemon and Herb Chicken with Saffron Risotto</a><span>Rs 3490.23</span>
+              </div>
+              <div class="menu-ingredients">
+                Grilled chicken marinated in a blend of fresh herbs, garlic, and lemon zest, served on a bed of creamy saffron risotto.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+              <img src="{% static 'assets/img/menu/special6.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Miso-Glazed Chicken</a><span>Rs 3561.90</span>
+              </div>
+              <div class="menu-ingredients">
+                Grilled or roasted chicken glazed with a savory-sweet miso sauce, served with a side of pickled vegetables and steamed rice
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-dessert">
+              <img src="{% static 'assets/img/menu/dessert1.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Classic Tiramisu</a><span>Rs 534.90</span>
+              </div>
+              <div class="menu-ingredients">
+                Made with layers of espresso-soaked ladyfingers, mascarpone cheese, and a dusting of cocoa powder.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-dessert">
+              <img src="{% static 'assets/img/menu/dessert2.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Chocolate Fondant (Molten Lava Cake)</a><span>Rs 342.80</span>
+              </div>
+              <div class="menu-ingredients">
+                A warm, decadent chocolate cake with a gooey, molten center. Served hot and paired with vanilla ice cream or whipped cream.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-dessert">
+              <img src="{% static 'assets/img/menu/dessert3.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#"> Pistachio Baklava with Rose Water Syrup</a><span>Rs 361.97</span>
+              </div>
+              <div class="menu-ingredients">
+                A refined version of the traditional Middle Eastern pastry, layered with crispy phyllo dough, pistachio nuts, and infused with a fragrant rose water syrup for an exotic twist.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-dessert">
+              <img src="{% static 'assets/img/menu/dessert4.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Lemon Blueberry Cheesecake</a><span>Rs 912.34</span>
+              </div>
+              <div class="menu-ingredients">
+                A zesty and refreshing twist on the classic, this cheesecake combines the smooth richness of cream cheese with tangy lemon zest and a layer of sweet blueberry sauce.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-dessert">
+              <img src="{% static 'assets/img/menu/dessert5.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#">Lemon & Raspberry Soufflé</a><span>Rs 561.20</span>
+              </div>
+              <div class="menu-ingredients">
+                A light, airy dessert made with lemon zest, fresh raspberries, and whipped egg whites, creating a delicate soufflé with a tangy and refreshing flavor.
+              </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-dessert">
+              <img src="{% static 'assets/img/menu/dessert6.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="#"> Classic New York Cheesecake</a><span>Rs 821.90</span>
+              </div>
+              <div class="menu-ingredients">
+                A rich, creamy, and dense cheesecake with a buttery graham cracker crust. The filling is made from cream cheese, eggs, sugar, and vanilla, offering a simple yet luxurious flavor.
+              </div>
+            </div><!-- Menu Item -->
+
+            
+          </div><!-- Menu Container -->
+  
+        </div>
+  
+    </section>
+    </main>
+
+
+    {% include 'footer.html' %}
+    
+</body>
+</html>

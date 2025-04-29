@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+  <link href="{% static 'assets/img/favicon.jpg' %}" rel="icon">
+
+  
+</head>
+
+<body>
+
+   {% include 'header.html' %}
+  <main class="main">
+
+    <div class="container section-title" data-aos="fade-down">
+      <br><br><br><br>
+    <h2>adminlogin</h2>
+    <div><span>For The</span> <span class="description-title">Owner Only</span></div>
+  </div><!-- End Section Title -->
+
+    <div  class="row gy-4" data-aos="fade-down" style="padding:0 50px 50px 50px; display=flex ; justify-content: center; align-items: center; ">
+      <div class ="col-lg-5">
+        <img src="{% static 'assets/img/login.jpg' %}" height="400" width="400" />
+      </div>
+
+   
+        
+          <div class="col-lg-4"  class="container">
+            
+            {% for x in messages %}
+                <h5> 
+                  <div id="myAlert" class="alert alert-danger  alert-dismissible fade show" role="alert">
+                    <strong>{{x}}</strong>
+                  </div>
+              
+            
+                    <script>
+                       // Function to dismiss the alert after a specified duration
+                        function dismissAlert() {
+                           var alertDiv = document.getElementById('myAlert');
+                          if (alertDiv) {
+                            alertDiv.classList.add('fade');
+                            setTimeout(function() {
+                              alertDiv.style.display = 'none';
+                              }, 1000); // Change 1000 to the desired duration in milliseconds (e.g., 3000 for 3 seconds)
+                          }       
+                        }
+            
+                          // Automatically dismiss the alert after 3 seconds (adjust the time as needed)
+                        setTimeout(dismissAlert, 8000); // 3000 milliseconds = 3 seconds
+                    </script>  
+            
+                                
+                      </h5>
+                      {% endfor %}
+
+
+            <form action="{% url 'adminlogin' %}" method="POST" >
+              <!-- In front of action="this name should be technical name of function using contact.html page is showing on the browser which we write in urls.py file as views.reg" -->
+  
+              {% csrf_token %}
+      <!-- Cross-Site Request Forgery (CSRF) is an attack that forces authenticated users to submit a request to a Web application against which they are currently authenticated.
+      CSRF Token used to prevent unathorized person could not submit form from your website-->
+              <div class="form-group" >
+               <input type="text" class="form-control" placeholder="Enter Your UserName" name="username" required>
+              </div>
+              <br>
+
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Enter Your Password" name="password" required>
+              </div>
+              <br>
+
+              <div class="form-group" >
+                <center><input type="submit" value="Login" class="btn btn-primary py-2 px-5" name="submit"></center>
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div> 
+  </main>
+
+
+   
+    {% include 'footer.html'%}
+      
+        
+      
+  </body>
+  </html>

@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <link href="{% static 'assets/img/favicon.jpg' %}" rel="icon">
+
+  
+</head>
+
+<body>
+  
+  {% include 'header.html' %}
+
+    <main class="main">
+        <!-- Book A Table Section -->
+    <section id="book-a-table" class="book-a-table section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <br><br>
+          <h2>Book A Table</h2>
+          <div><span>Book a</span> <span class="description-title">Table</span></div>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-lg-4 reservation-img" style="background-image: url('{% static "assets/img/book.jpg" %}');"></div>
+  
+            <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200" style="padding :30px">
+
+              
+
+              <form action="{% url 'booktable' %}" method="POST" role="form" >
+
+
+
+                
+                {% comment %}  showing the message after submission  {% endcomment %}
+
+                {% for x in messages %}
+                <h5> 
+                  <div id="myAlert" class="alert alert-primary alert-dismissible fade show" role="alert">
+                    <strong>{{x}}</strong>
+                  </div>
+              
+            
+                    <script>
+                       // Function to dismiss the alert after a specified duration
+                        function dismissAlert() {
+                           var alertDiv = document.getElementById('myAlert');
+                          if (alertDiv) {
+                            alertDiv.classList.add('fade');
+                            setTimeout(function() {
+                              alertDiv.style.display = 'none';
+                              }, 1000); // Change 1000 to the desired duration in milliseconds (e.g., 3000 for 3 seconds)
+                          }       
+                        }
+            
+                          // Automatically dismiss the alert after 3 seconds (adjust the time as needed)
+                        setTimeout(dismissAlert, 8000); // 3000 milliseconds = 3 seconds
+                    </script>  
+            
+                                
+                      </h5>
+                      {% endfor %}
+
+
+
+
+                {% csrf_token %}
+                <div class="row gy-4">
+                  <div class="col-lg-4 col-md-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="">
+                  </div>
+                </div>
+  
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                  <center><input type="submit" value="Submit" class="btn btn-primary py-2 px-5" name="submit" ></center>
+                </div>
+  
+              </form>
+                  
+
+
+
+            </div><!-- End Reservation Form -->
+  
+          </div>
+  
+        </div>
+  
+    </section><!-- /Book A Table Section -->
+    </main>
+
+  {% include 'footer.html' %}
+
+    
+</body>
+</html>

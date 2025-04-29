@@ -1,0 +1,313 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Blue Nile</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.jpg' %}" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+
+
+  <header id="header" class="header fixed-top">
+
+   
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+         
+          <h1 class="sitename">Blue Nile</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="{% url 'home' %}" >Home</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'menu' %}">Menu</a></li>
+            <li><a href="{% url 'events' %}">Events </a></li>
+            <li><a href="{% url 'gallery' %}">Gallery </a></li>
+            <li><a href="{% url 'chefs' %}">Chefs</a></li>
+            <li><a href="{% url 'booktable' %}" class="btn btn-primary" >Book a Table</a></li>
+            <br>
+            <li><a href="{% url 'contact' %}" class="btn btn-primary" >Contact Us </a></li>
+            <br>
+            <li><a href="{% url 'adminlogin' %}" class="btn btn-primary" >Admin Login</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active"  style="width: 100%;height: 100%;object-fit: cover; ">
+          <img src="{% static 'assets/img/hero-carousel/hero1.jpg' %}" alt="" >
+          <div class="carousel-container">
+            <h2><span></span>  BlueNile Restaurant </h2>
+            <p style="font-size: 20px; font-weight: bold;">"Welcome to BlueNile: Where Elegance Meets Excellence"</p>
+            <p style="font-size: 20px; font-weight: bold;">"Indulge in world-class amenities, fine dining, and breathtaking views"</p>
+
+            <div>
+              <a href="{% url 'menu' %}" class="btn-get-started">Our Menu</a>
+              <a href="{% url 'booktable' %}" class="btn-get-started">Book a table</a>
+            </div>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero2.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>Where Guests Become Family</h2>
+            <div>
+              <a href="{% url 'menu' %}" class="btn-get-started">Our Menu</a>
+              <a href="{% url 'booktable' %}" class="btn-get-started">Book a table</a>
+            </div>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero3.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>Cherished Moments Begin Here</h2>
+            <div>
+              <a href="{% url 'menu' %}" class="btn-get-started">Our Menu</a>
+              <a href="{% url 'booktable' %}" class="btn-get-started">Book a table</a>
+            </div>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero4.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>Stay. Relax. Indulge. Repeat</h2>
+            <div>
+              <a href="{% url 'menu' %}" class="btn-get-started">Our Menu</a>
+              <a href="{% url 'booktable' %}" class="btn-get-started">Book a table</a>
+            </div>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero5.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>Your Comfort, Our Priority</h2>
+            <div>
+              <a href="{% url 'menu' %}" class="btn-get-started">Our Menu</a>
+              <a href="{% url 'booktable' %}" class="btn-get-started">Book a table</a>
+            </div>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+
+
+    
+<!-- About Section -->
+<section id="about" class="about section light-background">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>About Us</h2>
+      <div><span>Know About </span> <span class="description-title">Our Restaurant</span></div>
+    </div><!-- End Section Title -->
+  <div class="container">
+
+    <div class="row gy-4">
+      <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+        <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="">
+        <a href="https://www.youtube.com/watch?v=xDChqIPlWsw" class="glightbox pulsating-play-btn"></a>
+      </div>
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+        <h3>A Legacy of Elegance and Exquisite Flavors Since 1994</h3>
+        <p class="fst-italic">
+          At Blue Nile, where tradition meets innovation, we believe in the magic of bringing people together over delicious food with an unforgettable view. Nestled in the heart of Pune since 1994, Blue Nile offers a cozy and inviting space for a culinary journey like no other.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-all"></i> <span>Our founders Sunil Chauhan &amp Joseph Marron , envisioned a place where the community could come together to enjoy delectable dishes inspired by both local and international cuisine.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>In our kitchen, only the freshest and finest ingredients are used to craft each dish with care and precision. From our mouth-watering appetizers to our succulent main courses and delightful desserts</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Our friendly staff and warm ambiance will make you feel right at home.We look forward to serving you soon</span></li>
+        </ul>
+        
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+    
+    
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section ">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Reviews</h2>
+        <div><span>What Our </span> <span class="description-title">Diners Say</span></div>
+      </div><!-- End Section Title -->
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper" >
+          <script type="application/json" class="swiper-config" style="background-color: white;">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Sunita Shah </h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill "></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>While it’s on the pricier side, every penny was worth it. The quality of the food, the luxurious setting, and the impeccable service make it a dining experience you’ll never forget. It’s not just a meal—it’s an event.</span>
+                  
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test2.jpg' %}" class="testimonial-img" alt="">
+                <h3>Abhishek Kumar</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The service was outstanding! The staff was attentive without being intrusive, always ready to help with a smile. They anticipated our needs and made us feel incredibly special. Truly a world-class dining experience.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test3.jpg' %}" class="testimonial-img" alt="">
+                <h3>Ehad Ali</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Absolutely divine! Each dish was a masterpiece, perfectly cooked and beautifully presented. The flavors were exquisite, and the ingredients tasted so fresh. The chef's attention to detail is evident in every bite.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test4.jpg' %}" class="testimonial-img" alt="">
+                <h3>Priya Chauhan</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>From the moment we walked in, we knew we were in for a treat. The amuse-bouche was a delightful surprise, and the multi-course tasting menu was a culinary journey I’ll remember forever. A true gem in the fine dining world.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test5.jpg' %}" class="testimonial-img" alt="">
+                <h3>Rani Singh</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The restaurant was spotless, and hygiene standards were clearly a top priority. This added to the sense of comfort and trust, allowing us to fully enjoy our meal without any worries.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+
+  {% include 'footer.html'%}
+
+  
+
+</body>
+
+</html>

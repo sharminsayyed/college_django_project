@@ -1,0 +1,283 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <link href="{% static 'assets/img/favicon.jpg' %}" rel="icon">
+
+</head>
+
+<body class="index-page">
+
+  {% include 'header.html' %}
+
+  <main class="main">
+    <section id="events" class="events section">
+        <div class="container section-title" data-aos="fade-up">
+          <div><span>Events That </span> <span class="description-title">We Arrange</span></div>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="row gy-4 event-item">
+                  <div class="col-lg-6">
+                    <img src="{% static 'assets/img/events-slider/event1.jpg' %}" class="img-fluid" style="width: 100%;object-fit: cover;height: 450px;">
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Weddings and Engagement Parties</h3>
+                    <div class="price">
+                      <p><span>Rs 8,65,000</span></p>
+                    </div>
+                   
+                    <ul>
+                      <li><i class="bi bi-check2-circle"></i> <span>Customized Menu - Enjoy a personalized menu with multi-course meals, custom cocktails, and options for dietary preferences.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Exclusive Full-Day Event - Host your celebration for the entire day, including the welcome, ceremony, all in one place.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Excellent Service - Our dedicated staff ensures seamless service, assisting with seating, timelines, and special requests throughout the day.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span> Elegant Event Space for 100-120 Guests - A beautifully arranged space to comfortably accommodate 100-120 guests, with customized seating and décor to fit your theme.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Entertainment and Special Touches - Enhance your event with live music, signature cocktails, a photo booth, and more to keep guests entertained.</span></li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div><!-- End Slider item -->
+  
+              <div class="swiper-slide">
+                <div class="row gy-4 event-item">
+                  <div class="col-lg-6">
+                    <img src="{% static 'assets/img/events-slider/event2.jpg' %}" class="img-fluid" style="width: 100%;object-fit: cover;height: 450px;">
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Live Music or Jazz Nights</h3>
+                    <div class="price">
+                      <p><span>Rs 2,65,000</span></p>
+                    </div>
+  
+                    <ul>
+                      <li><i class="bi bi-check2-circle"></i> <span> Intimate Live Music Experience - Enjoy an exclusive live jazz performance in an intimate setting for 20-30 guests. The music will create a relaxed atmosphere, perfect for an unforgettable evening.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Customized Menu - A personalized menu with a selection of gourmet dishes, cocktails, and desserts tailored to your tastes</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Exceptional Service - Dedicated staff will provide impeccable service throughout the night, ensuring your guests’ needs are met while maintaining a smooth flow of food and drinks.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Timing & Ambiance - The event will run from 8 PM to 3:30 AM, offering a full night of entertainment, dining, and relaxation in our restuarant </span></li>
+  
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div><!-- End Slider item -->
+  
+              <div class="swiper-slide">
+                <div class="row gy-4 event-item">
+                  <div class="col-lg-6">
+                    <img src="{% static 'assets/img/events-slider/event3.jpg' %}" class="img-fluid" alt="" style="width: 100%;object-fit: cover;height: 450px;">
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Birthday Celebrations and Anniversaries</h3>
+                    <div class="price">
+                      <p><span>Rs 1,10,000</span></p>
+                    </div>
+                   
+                    <ul>
+                      <li><i class="bi bi-check2-circle"></i> <span>Guest Capacity & Service - Limited to 20-30 guests for an intimate celebration, ensuring personalized attention and exceptional service throughout the event.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Cake & Decoration - A delicious cake provided by the restaurant, along with elegant decorations to suit the theme of your special occasion, all arranged by our team.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Event Duration - Enjoy a 5-6 hour event with seamless service, ensuring plenty of time to celebrate, socialize, and dine in comfort.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Customized Menu - A personalized menu tailored to your preferences, featuring a selection of gourmet dishes and beverages designed to delight your guests.</span></li>
+  
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div><!-- End Slider item -->
+  
+  
+              <div class="swiper-slide">
+                <div class="row gy-4 event-item">
+                  <div class="col-lg-6">
+                    <img src="{% static 'assets/img/events-slider/event4.jpg' %}" class="img-fluid" alt="" style="width: 100%;object-fit: cover;height: 450px;">
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Holiday Party Dinners</h3>
+                    <div class="price">
+                      <p><span>Rs 83,900<span></p>
+                    </div>
+                    
+                    <ul>
+                      <li><i class="bi bi-check2-circle"></i> <span> Exceptional Service - With a small guest list of 10-12, our staff will provide personalized service, ensuring a seamless and memorable experience for every guest.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Special Holiday Atmosphere - The restaurant will create a festive atmosphere with elegant decorations and music, enhancing the mood for Christmas, Diwali, Eid, or New Year.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Event Duration - Enjoy a 4-5 hour event, with ample time for dining, socializing, and celebrating in a cozy, elegant setting.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Customized Menu - Celebrate with a personalized menu featuring holiday-inspired dishes and beverages tailored to your preferences for an intimate dining experience.</span></li>
+  
+                    </ul>
+                  
+                  </div>
+                </div>
+              </div><!-- End Slider item -->
+  
+              <div class="swiper-slide">
+                <div class="row gy-4 event-item">
+                  <div class="col-lg-6">
+                    <img src="{% static 'assets/img/events-slider/event5.jpg' %}" class="img-fluid" alt="" style="width: 100%;object-fit: cover;height: 450px;">
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Family and Friends Gathering (Night Event)</h3>
+                    <div class="price">
+                      <p><span>59,000</span></p>
+                    </div>
+                    
+                    <ul>
+                      <li><i class="bi bi-check2-circle"></i> <span> Event Duration - Enjoy a 5-5.5 hour event filled with delicious food, laughter, and quality time, creating an unforgettable family experience.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Nighttime Celebration - Celebrate under the night sky, with the restaurant’s elegant ambiance and lighting enhancing the atmosphere for a cozy and intimate gathering.</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span></span>Customized Menu - A personalized menu featuring your favorite family dishes, gourmet selections, and beverages, all crafted to suit your tastes and preferences for a memorable evening.</li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Exceptional Service - With 10-12 guests, our team will provide attentive and personalized service, ensuring every need is met throughout the evening.</span></li>
+  
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div><!-- End Slider item -->
+              
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+  
+      </section><!-- /Events Section -->
+
+      <section id="book-a-table" class="book-a-table section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Book An Event</h2>
+          <div><span>Event </span> <span class="description-title">Booking</span></div>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-lg-4 reservation-img" style="background-image: url('{% static "assets/img/events-slider/eventbook.jpg" %}');"></div>
+  
+            <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200" style="padding :30px">
+
+              
+
+              <form action="{% url 'events' %}" method="POST" role="form" >
+
+
+
+                
+                {% comment %}  showing the message after submission  {% endcomment %}
+
+                {% for x in messages %}
+                <h5> 
+                  <div id="myAlert" class="alert alert-primary alert-dismissible fade show" role="alert">
+                    <strong>{{x}}</strong>
+                  </div>
+              
+            
+                    <script>
+                       // Function to dismiss the alert after a specified duration
+                        function dismissAlert() {
+                           var alertDiv = document.getElementById('myAlert');
+                          if (alertDiv) {
+                            alertDiv.classList.add('fade');
+                            setTimeout(function() {
+                              alertDiv.style.display = 'none';
+                              }, 1000); // Change 1000 to the desired duration in milliseconds (e.g., 3000 for 3 seconds)
+                          }       
+                        }
+            
+                          // Automatically dismiss the alert after 3 seconds (adjust the time as needed)
+                        setTimeout(dismissAlert, 8000); // 3000 milliseconds = 3 seconds
+                    </script>  
+            
+                                
+                      </h5>
+                      {% endfor %}
+
+
+
+
+                {% csrf_token %}
+                <div class="row gy-4">
+                  <div class="col-lg-4 col-md-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="">
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <select class="form-control" name="eventname" required>
+                    <option value="" disabled selected>Event Reservation</option>
+                    <option value="Weddings and Engagement Parties">Weddings and Engagement Parties</option>
+                    <option value="Live Music or Jazz Nights">Live Music or Jazz Nights</option>
+                    <option value="Birthday Celebrations and Anniversaries">Birthday Celebrations and Anniversaries</option>
+                    <option value="Holiday Party Dinners">Holiday Party Dinners</option>
+                    <option value="Family and Friends Gathering (Night Event)">Family and Friends Gathering (Night Event)</option>
+                    <option value="Other">Other</option>
+
+                  </select>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                  <center><input type="submit" value="Submit" class="btn btn-primary py-2 px-5" name="submit" ></center>
+                </div>
+  
+              </form>
+                  
+
+
+
+            </div><!-- End Reservation Form -->
+  
+          </div>
+  
+        </div>
+  
+    </section><!-- /Book A Table Section -->
+    </main>
+
+  {% include 'footer.html' %}
+  
+  </body>
+  
+  </html>  

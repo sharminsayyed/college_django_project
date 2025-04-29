@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <link href="{% static 'assets/img/favicon.jpg' %}" rel="icon">
+
+  
+</head>
+
+<body>
+    
+   {% include 'header.html'%}      
+      
+
+    <main class="main">
+        <section id="contact" class="contact section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <br><br>
+              <h2>Contact</h2>
+              <div><span>Check Our</span> <span class="description-title">Contact</span></div>
+            </div><!-- End Section Title -->
+      
+            <div class="mb-5">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.966669230105!2d73.87488377470794!3d18.521868369135532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c05074135b17%3A0xa422fee8ff1347dd!2sBlue%20Nile%20Restaurant!5e1!3m2!1sen!2sin!4v1735393045520!5m2!1sen!2sin" height="400" style="border:0; width:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+            </div><!-- End Google Maps -->
+      
+            <div class="container" data-aos="fade">
+      
+              <div class="row gy-5 gx-lg-5">
+      
+                <div class="col-lg-4">
+      
+                  <div class="info">
+                    <h3>Get in touch</h3>
+                    <p>We’re here to make your dining experience exceptional! Whether you have a question about our menu ,events or just need to ask something, don’t hesitate to reach out. Here’s how you can contact us:</p>
+      
+                    
+      
+                    <div class="info-item d-flex">
+                      <i class="bi bi-envelope flex-shrink-0"></i>
+                      <div>
+                        <h4>Email:</h4>
+                        <p>BlueNile01@gmail.com</p>
+                      </div>
+                    </div><!-- End Info Item -->
+      
+                    <div class="info-item d-flex">
+                      <i class="bi bi-phone flex-shrink-0"></i>
+                      <div>
+                        <h4>Call:</h4>
+                        <p>+91 78453 23145</p>
+                      </div>
+                    </div><!-- End Info Item -->
+      
+                  </div>
+      
+                </div>
+      
+                <div class="col-lg-8">
+
+
+
+
+                  {% for x in messages %}
+                        <h5> 
+                          <div id="myAlert" class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <strong>{{x}}</strong>
+                          </div>
+              
+            
+                      <script>
+                          // Function to dismiss the alert after a specified duration
+                          function dismissAlert() {
+                             var alertDiv = document.getElementById('myAlert');
+                              if (alertDiv) {
+                                  alertDiv.classList.add('fade');
+                                  setTimeout(function() {
+                                      alertDiv.style.display = 'none';
+                                  }, 1000); // Change 1000 to the desired duration in milliseconds (e.g., 3000 for 3 seconds)
+                              }
+                          }
+            
+                          // Automatically dismiss the alert after 3 seconds (adjust the time as needed)
+                          setTimeout(dismissAlert, 8000); // 3000 milliseconds = 3 seconds
+                      </script>  
+            
+                                
+                      </h5>
+                      {% endfor %}
+
+                  <form action="{% url 'contact' %}" method="POST" name="contactus_form">
+                    <!-- In front of action="this name should be technical name of function using contact.html page is showing on the browser which we write in urls.py file as views.reg" -->
+        
+                    {% csrf_token %}
+                    <!-- Cross-Site Request Forgery (CSRF) is an attack that forces authenticated users to submit a request to a Web application against which they are currently authenticated.
+                    CSRF Token used to prevent unathorized person could not submit form from your website-->
+                    <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Your Name" name="name" required="">
+                    </div>
+                    <br>
+      
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Your Email" name="email" required="">
+                    </div>
+                    <br>
+      
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Contact No." name="phone" required="">
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                      <select class="form-control" name="enquiry" required="">
+                        <option value="other" disabled selected>Enquiry About</option>
+                        <option value="Menu">Menu</option>
+                        <option value="Table Reservation">Table Reservation</option>
+                        <option value="Event Reservation">Event Reservation</option>
+                        <option value="Anything Else">Anything Else</option>
+                      </select>
+                    </div>
+                    <br>
+      
+                    <div class="form-group">
+                      <textarea name="message"  class="form-control"   placeholder="Please write about your enquiry in brief" id="" cols="30" rows="7" required=""></textarea>
+                    </div>
+                    <br>
+                    
+                    <div class="form-group">
+                      <center><input type="submit" value="Submit" class="btn btn-primary py-2 px-5" name="submit" ></center>
+                    </div>
+                  </form>
+
+
+
+                </div><!-- End Contact Form -->
+      
+              </div>
+      
+            </div>
+      
+        </section><!-- /Contact Section -->
+    </main>
+
+  
+  {% include 'footer.html' %}
+
+    
+    
+</body>
+</html>
