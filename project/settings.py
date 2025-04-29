@@ -153,15 +153,10 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Default
 ALLOWED_HOSTS = ['college-django-project-5.onrender.com', 'localhost', '127.0.0.1']
 ALLOWED_HOSTS = ['*.onrender.com', 'localhost', '127.0.0.1']
 
-ALLOWED_HOSTS = ['college-django-project.onrender.com']
-ALLOWED_HOSTS = ['college-django-project.onrender.com', 'localhost', '127.0.0.1']
-ALLOWED_HOSTS = ['college-django-project.onrender.com', 'localhost', '127.0.0.1', 'college-django-project-5.onrender.com']
 
 
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-ALLOWED_HOSTS = ['college-django-project.onrender.com']
-ALLOWED_HOSTS = ['college-django-project.onrender.com', 'localhost', '127.0.0.1']
 
